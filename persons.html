@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persons</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/persons.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+
+
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Examen Parcial 2</a>
+        </div>
+        <ul class="nav nav-pills nav-fill">
+            <li class="nav-item">
+                <a href="#" class="d-flex align-items-center text-white text-decoration-none" id="dropdownUser1"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="recursos/user.png" alt="" width="40" height="40" class="rounded-circle me-2">
+                    <strong>Benjamin Huamani</strong>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="aside" class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px;">
+        <ul class="nav nav-pills flex-column mb-auto">
+
+            <li>
+                <a href="index.html" class="nav-link text-white">
+                    <i class="fas fa-home"></i>
+                    <svg class="bi me-2" width="16" height="16">
+                        <use xlink:href="#speedometer2" />
+                    </svg>
+                    Home
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="persons.html" class="nav-link active" aria-current="page">
+                    <i class="fas fa-user-friends"></i>
+                    <svg class="bi me-2" width="16" height="16">
+                        <use xlink:href="#home" />
+                    </svg>
+                    Persons
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav-link text-white">
+                    <i class="fas fa-calculator"></i>
+                    <svg class="bi me-2" width="16" height="16">
+                        <use xlink:href="#table" />
+                    </svg>
+                    Operations
+                </a>
+            </li>
+            <li>
+                <a href="ejemplos.html" class="nav-link text-white">
+                    <i class="fas fa-book"></i>
+                    <svg class="bi me-2" width="16" height="16">
+                        <use xlink:href="#grid" />
+                    </svg>
+                    Ejemplos
+                </a>
+            </li>
+        </ul>
+        <hr>
+        <hr>
+    </div>
+
+    <aside>
+        <div id="derecha" class="container">
+            <div class="form-group">
+                <input type="text" name="" id="nombres" class="form-control" placeholder="Nombres"
+                    aria-describedby="helpId" onkeyup="raiz()">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" id="correo" class="form-control" placeholder="Correo"
+                    aria-describedby="helpId">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" id="telefono" class="form-control" placeholder="Telèfono"
+                    aria-describedby="helpId">
+            </div>
+            <button id="registrar" class="btn btn-primary" onclick="registrar()">Registrar</button>
+        </div>
+        <table id="tablita" class="table table-dark table-striped">
+            <thead>
+                <tr>
+                    <th>Nombres</th>
+                    <th>Correo</th>
+                    <th>Telefono</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tiendamia</td>
+                    <td>Lana</td>
+                    <td>480</td>
+                </tr>
+                <tr>
+                    <td>MercadoLibre</td>
+                    <td>Botones</td>
+                    <td>600</td>
+                </tr>
+                <tr>
+                    <td>Linio</td>
+                    <td>Cuero</td>
+                    <td>250</td>
+                </tr>
+                <tr>
+                    <td>Wix</td>
+                    <td>Mangas</td>
+                    <td>300</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </aside>
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

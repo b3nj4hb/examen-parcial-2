@@ -1,0 +1,23 @@
+body{
+    width: auto;
+    height:100%
+}
+#aside, #aside ul, #aside li{
+    height: 100%;
+}
+#aside{
+    display: flex;
+    float: left;
+}
+#cartita{
+    display: flex;
+    width: 900px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#cachorro{
+    width: 100%;
+    height: calc(100% - 0px);
+    object-fit: contain;
+}

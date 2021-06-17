@@ -1,0 +1,22 @@
+body{
+    width: auto;
+    height:100%
+}
+#derecha {
+    width: 500px;
+}
+#aside{
+    display: flex;
+    float: left;
+}
+#tablita {
+    width: 600px;
+    margin-right: 20px;
+}
+
+aside {
+    display: flex;
+    /* flex-direction: column; */
+    height: 100%;
+    margin-top: 25px;
+}
